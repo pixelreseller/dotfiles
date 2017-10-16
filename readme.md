@@ -7,3 +7,8 @@
     Debian - Mongo - Apache
     - vagrant up
     - vagrant ssh
+
+## TIPS
+
+    - about generals
+    - about gits
