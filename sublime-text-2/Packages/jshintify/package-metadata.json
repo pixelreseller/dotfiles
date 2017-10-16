@@ -1,1 +1,0 @@
-{"description": "Run jshint with your own jshintrc and show errors in status bar.", "url": "http://afterdesign.github.io/jshintify/", "platforms": ["*"], "version": "1.1.3", "sublime_text": "*", "dependencies": []}

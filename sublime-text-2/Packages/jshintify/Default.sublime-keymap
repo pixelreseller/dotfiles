@@ -1,4 +1,0 @@
-[
-    { "keys": ["ctrl+super+j"], "command": "jshintify" },
-    { "keys": ["ctrl+shift+j"], "command": "jshintify_quick_panel" }
-]

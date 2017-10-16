@@ -1,0 +1,5 @@
+[10/16/2017 03:26:25PM] INFO - ==== Loading 'Xdebug Client' package ====
+[10/16/2017 03:26:25PM] INFO - Failed to open /Users/rocketfid/Library/Application Support/Sublime Text 2/Packages/User/Xdebug.expressions.
+[10/16/2017 03:26:25PM] DEBUG - [Errno 2] No such file or directory: u'/Users/rocketfid/Library/Application Support/Sublime Text 2/Packages/User/Xdebug.expressions'
+[10/16/2017 03:26:25PM] INFO - Failed to parse /Users/rocketfid/Library/Application Support/Sublime Text 2/Packages/User/Xdebug.expressions.
+[10/16/2017 03:26:25PM] DEBUG - local variable 'data_file' referenced before assignment
