@@ -1,0 +1,33 @@
+{
+    // scope:
+    //
+    // source.php comment.block
+    // source.php meta.class entity.other.inherited-class
+    // source.php meta.function.arguments
+    //   blacklist:
+    //     variable.other
+    // source.php meta.interface entity.other.inherited-class
+    // source.php meta.use
+
+    "scope": "source.php comment.block, source.php meta.class entity.other.inherited-class, source.php meta.function.arguments - variable.other, source.php meta.interface entity.other.inherited-class, source.php meta.use",
+    "completions": [
+        "ArrayAccess",
+        "Countable",
+        "DateTimeInterface",
+        "Iterator",
+        "IteratorAggregate",
+        "JsonSerializable",
+        "OuterIterator",
+        "RecursiveIterator",
+        "Reflector",
+        "SeekableIterator",
+        "Serializable",
+        "SessionHandlerInterface",
+        "SessionIdInterface",
+        "SessionUpdateTimestampHandlerInterface",
+        "SplObserver",
+        "SplSubject",
+        "Throwable",
+        "Traversable"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "*": {
+        "*": [
+            "markupsafe",
+            "python-jinja2"
+        ],
+        ">=3119": [
+            "pygments",
+            "python-markdown",
+            "mdpopups",
+            "python-jinja2",
+            "markupsafe"
+        ]
+    }
+}

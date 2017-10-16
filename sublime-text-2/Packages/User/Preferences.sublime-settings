@@ -1,0 +1,45 @@
+{
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 50,
+	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin, text.haml",
+	"auto_complete_size_limit": 4194304,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "ng-controller=\"*",
+			"selector": "punctuation.definition.string"
+		}
+	],
+	"auto_complete_with_fields": false,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Theme - Nexus/Nexus.tmTheme",
+	"default_encoding": "UTF-8",
+	"detect_indentation": false,
+	"file_exclude_patterns":
+	[
+		".tags",
+		".tags_sorted_by_file",
+		".gemtags",
+		"vendor",
+		"cache"
+	],
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+	],
+	"tab_completion": true,
+	"tab_size": 4,
+	"theme": "Nexus.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"xdebug":
+	{
+		"close_on_stop": true,
+		"debug": true,
+		"ide_key": "sublime.xdebug",
+		"max_children": 2,
+		"max_depth": 2,
+		"port": 9000,
+		"url": "http://pmu.rocketfid.loc/"
+	}
+}

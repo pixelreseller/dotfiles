@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"3024 Color Scheme",
+		"Backbone",
+		"Better Completion",
+		"Bootstrap 3 Snippets",
+		"Can I Use",
+		"ColorPicker",
+		"CSS Completions",
+		"CTags",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"HTML5",
+		"HTMLAttributes",
+		"JavaScript Completions",
+		"jQuery",
+		"jQuery Snippets pack",
+		"JsFormat",
+		"JSHint",
+		"jshintify",
+		"LESS",
+		"MongoDB - PHP Completions",
+		"Package Control",
+		"PHP Completions Kit",
+		"Phpcs",
+		"PHPUnit",
+		"ReactJS",
+		"SFTP",
+		"SideBarEnhancements",
+		"Terminal",
+		"Theme - Flatland",
+		"Theme - Nexus",
+		"Theme - Soda",
+		"Three.js Autocomplete",
+		"Unicode Character Highlighter",
+		"VintageEx",
+		"Xdebug Client"
+	]
+}

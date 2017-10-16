@@ -1,0 +1,160 @@
+2014-06-23 10:04:18
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:19
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:29
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:32
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:34
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
+2014-06-23 10:04:38
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/listeners.py", line 31, in run_with_except
+  File "./sublimesvn/proc.py", line 93, in get_wc_root
+  File "./sublimesvn/proc.py", line 159, in find_wc_root
+  File "./sublimesvn/proc.py", line 1256, in run
+  File "./sublimesvn/proc.py", line 848, in is_version
+  File "./sublimesvn/proc.py", line 847, in norm
+ValueError: invalid literal for int() with base 10: ''
