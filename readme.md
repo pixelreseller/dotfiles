@@ -1,4 +1,3 @@
-## Sublime Text 3 configuration
+## Sublime Text 2 configuration
 
-    ln -s ~/dotfiles/sublime-text-2/Installed\ Packages/ ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
-    ln -s ~/dotfiles/sublime-text-2/Packages/ ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+    ln -s ~/dotfiles/sublime-text-2/User/ ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
