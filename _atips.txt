@@ -1,0 +1,143 @@
+scp /tmp/dump.tar.gz vagrant@192.168.56.102:/tmp/
+
+tail -f admin.log | egrep -wi --color "critical|error"
+
+#######################
+HELPFULL SHELL COMMANDS
+#######################
+
+# netstat | grep 8080
+# netstat | grep nginx
+# netstat -anp tcp | grep 9000
+
+# ps -ef | grep nginx
+
+# curl http://127.0.0.1:1001 (option) -vvv
+
+# telnet localhost 9000\
+
+# tail -f *log
+> -f : fichier à suivre en tps réel
+# grep -v INFO
+> -v : informations à ignorer
+
+
+
+#################
+HELPFULL ODM TIPS
+#################
+
+> pour butter le duplicat ~ -> namespace Doctrine\\ORM\\Tools; ligne 184 <-> 191
+### from vendor/doctrine/tools/sandbox ###
+
+$ php doctrine orm:generate-entities ../../../../src
+> to generate getter/setter
+
+$ php doctrine orm:schema-tool:create // :update // :drop
+> to generate database from entities // update database
+
+1 > Clear ./Entities/ folder
+2 > php doctrine orm:convert-mapping --force --from-database  annotation ./Entities/
+3 > Clean folder and move generated annotation files to /RocketFid/ForumEtudes/Entites/
+4 > php doctrine orm:generate-entities ./Entities/ --generate-annotations=true
+5 > Clean folder and move generated annotation files to /RocketFid/ForumEtudes/Entites/
+
+
+
+#########
+MONT DISK
+#########
+
+1 > pour rallumer un disque ouvrir le terminal et taper : diskutil list
+2 > trouver son disque dans la liste
+3 > taper : diskutil mountDisk /dev/mondisque (en général disk1 ou disk0)
+
+
+
+#####################
+MONGODB QUERY EXEMPLE
+#####################
+
+db.user.update({email:/prinzivalle@gmail/,"specials":{$exists:1}}, {$set:{"specials.2.date":ISODate("2014-10-02T07:43:33Z")}})
+
+db.timeline.find({_id:ObjectId("559cd0fc38a02ffb010041a9")}, {timelineCards: { $elemMatch: {type:NumberLong(14)}}}).pretty()
+
+db.user.update({email:/guillaume@rocketfid/}, {$pull:{settings:{'name':'email'}}})
+
+
+#####################
+VAGRANT
+#####################
+
+vagrant init hashicorp/precise32 || vagrant box add hashicorp/precise32
+vagrant up
+# le fichier de configuration est Vagrantfile
+
+VAGRANT_LOG=debug vagrant status
+# pour obtenir le status de vagrant et des plugins
+
+
+
+#####################
+MTMD KILLER PROCESS
+http://pondini.org/TM/30.html
+#####################
+
+- To turn Snapshots ON:   sudo tmutil enablelocal  
+- To turn Snapshots OFF:  sudo tmutil disablelocal
+- To make a Snapshot:     tmutil snapshot
+
+
+
+#####################
+ROCKETFID DEV COMMANDS
+(svn+ssh://<username>@svn.rocketfid.com/repository/rocketfid/trunk/web/)
+(ssh <username>@dev.rocketfid.com)
+
+<username>@git.rocketfid.com:/repository/betterise.git
+<username>@git.rocketfid.com:/repository/betterise-healthtech.git
+<username>@git.rocketfid.com:/repository/betterise-maternite.git
+
+<username>@git.rocketfid.com:/repository/equidia.git
+<username>@git.rocketfid.com:/repository/api.git
+
+#####################
+
+su -c './tools/mailer mail.checkup -e guillaume@rocketfid.com' www-data
+
+——————————————————
+# TO CLEAN SVN DEV
+1. en root (sudo su) : svn cleanup
+2. find . -name \*svn\* -exec chown -R svnup:svnusers '{}' \;
+3. su -c 'svn cleanup' svnup
+4. su -c 'svn up' svnup
+
+——————————————
+# TO ACCESS DB
+mongo -u betterise -p rocket64btz betterise
+mongo -u maternite -p rocket64btz maternite
+
+—————————————
+# SVN RESOLVE
+svn resolve --accept=working README
+
+——————————————
+# CODE SNIFFER PHP/JS (phpcs and phpcbf)
+js : phpcs --tab-width=4 --standard=Squiz ./js/custom.js
+php : phpcs --standard=PSR2 ./js/custom.js
+
+
+
+#####################
+DIVERS
+#####################
+
+—————
+# VPN - create credential for mac
+openssl pkcs12 -export -clcerts -inkey ~/Desktop/gprinzivalle/gprinzivalle.key -in ~/Desktop/gprinzivalle/gprinzivalle.crt -out MyPKCS12.p12 -name "Guillaume RocketFid"
+
+
+# show memory usage
+$> export CA_COLOR_OPAQUE=1
+$> export CA_LOG_MEMORY_USAGE=1
+$> /Applications/Safari.app/Contents/MacOS/Safari

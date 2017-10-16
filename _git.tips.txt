@@ -1,0 +1,271 @@
+find ./ \( -name '.DS_Store' \) -delete
+
+------------------
+---- WORKFLOW ----
+------------------
+
+
+#1. S’assurer d’être sur la branch dev :
+> git branch
+Si pas sur la branche dev, aller à 5 pour finir la procédure et revenir ici.
+
+#2. Récupérer les éventuelles mises-à-jour.
+> git pull origin dev
+
+#3. Créer une nouvelle branch (ex. style).
+> git checkout -b style dev
+
+#4. Développement.
+
+#5. Commit des modifications dans la branche.
+> git add .
+> git commit -am “Commit message, english is better”
+
+#6. Retour sur la branch dev.
+> git checkout dev
+
+#7. Récupérer les éventuelles mises-à-jour.
+> git pull origin dev
+
+#8. Merge des modifications dans la branch dev (ex. branch appelé style).
+> git merge style
+
+
+#9. Envoi des modifications sur le serveur git
+> git push origin dev
+
+#10. Suppression de la branche (ex. nommé style).
+> git branch -d style
+
+
+
+-------------------
+---- BDD IDENT ----
+-------------------
+** host: mysql51-61.pro
+** user & base: wboxprlvsymf1234
+** mdp: symf1234
+
+** connection ssh: ssh wboxprlv@ftp.wbox.fr
+** remote repo:	   ssh://wboxprlv@ftp.wbox.fr/homez.154/wboxprlv/wbox/git/wbox.git
+
+/!\ designe des methodes qui sentent le sapin.
+!!! aide memoire: http://www.kitpages.fr/fr/cms/22/aide-memoire-symfony2
+
+----------------------
+---- INSTRUCTIONS ----
+----------------------
+##bien definir le .gitignore au debut permet d'eviter une chiée de problème
+##le .gitignore du distant ne doit ignorer que /cache /logs /vendors et /.gitignore
+
+-----------------------------------------------------------
+------------------------------------ COMMANDS LINKED TO GIT
+-----------------------------------------------------------
+----------------------
+---- INSTALLATION ----
+----------------------
+#creation du repo prive
+	>> ssh user@ftp
+	>> git init --bare /path/to/repo.git
+
+#clone du repo
+	>> git clone ssh://user@ftp/path/to/repo.git
+	>> git remote add origin ssh://user@ftp/path/to/repo.git
+
+
+------------------
+---- WORKFLOW ----
+------------------
+	>> git add file1 file2 file3
+	>> git diff --cached
+	>> git status
+		* on branch localbranch
+	>> git commit -m "new commit"
+	>> git checkout master
+	>> git pull origin master
+	>> git merge localbranch
+	>> git push origin master
+
+
+-----------------------
+---- FIX CONFLICTS ----
+-----------------------
+	>> git pull --rebase origin master
+	>> git status
+	>> git add <some files>
+	>> git rebase --continue <some files>
+	>> ...
+#panique?
+	>> git rebase --abort
+
+
+---------------------------------
+---- FIX CONFLICTS WITH MELD ----
+---------------------------------
+#install un outil de merge
+	>> apt-get install meld
+#lance l'outil de merge pour regler les conflits
+	>> git mergetool
+
+
+--------------------------
+---- USEFULL COMMANDS ----
+--------------------------
+---- GESTION DES BRANCH
+-----------------------
+#creer une nouvelle branch (duplicat de la branch courante)
+	>> git checkout -b newbranch
+	>> git checkout -b newbranch sourcebranch
+#detruit une branch
+	>> git branch -d targetbranch
+#liste branch
+	>> git branch -r
+#liste les remotes branch
+	>> git remote -v
+#liste toutes les branch
+	>> git branch -a
+
+---- MANIPULATION DE L'INDEX GIT
+--------------------------------
+#ajoute des fichiers a l'index git
+	>> git add file1 file2
+	>> git add -f file1 (override le .gitignore et force l'ajout)
+	>> git add .
+#retire des fichiers de l'index git et du repertoire de travail
+/!\	>> git rm file1
+#retire des fichiers de l'index git
+	>> git rm --cached file1
+/!\	>> git rm -r --cached . (violent et met, en general, le bordel dans l'index git)
+
+---- SAUVEGARDE DE L'INDEX DE GIT
+---------------------------------
+#realise une "sauvegarde visible" de l'index git (present dans l'historique)
+	>> git commit -m "new commit"
+#liste les commit realises (touche "q" pour en sortir)
+	>> git log
+#realise une "sauvegarde invisible" de l'index git (abscent de l'historique)
+	>> git stash
+#liste les stash
+	>> git stash list
+#replace l'index sur un stash
+	>> git stash apply
+	>> git stash apply stash@{2}
+
+---- OPERATION SUR LES BRANCH
+-----------------------------
+#rassemble deux branch (la localbranch sur la branch courante)
+	>> git merge localbranch
+#realise les deux commandes precedentes
+	>> git pull origin master
+	>> git pull origin localjb:distantgui	
+#pousse la branch local sur la branch distante
+	>> git push origin master
+	>> git push origin localjb:distantgui
+
+---- MAJ LOCAL<->DISTANT
+------------------------
+#synchronise le local et le distant (branch incluses)
+	>> git fetch origin
+#realise une action similaire a pull sauf qu'au lieu de merge
+##l'historique garde l'aspect d'une serie de commits sans aucun merge
+	>> git checkout localbranchtoupdate
+	>> git rebase origin
+#continue le rebase apres l'eventuelle resolution de conflits
+	>> git rebase --continue
+#annule le processus de rebase si ca sent vraiment trop le sapin
+	>> git rebase --abort
+
+---- COMPARER DES BRANCH
+------------------------
+‘q’ letter to quit diff editor (less)
+#liste les changements non-assembles
+	>> git diff
+#lise les differences entre le working directory et le dernier commit
+	>> git diff HEAD
+#liste les differences entre l'index et le dernier commit
+	>> git diff --cached
+#compare deux branch
+	>> git diff master..local
+
+---- SAVE MY TIME
+-----------------
+#dit un gros "TA GUEULE" a git
+##par exemple, lorsqu'un git status montre des fichier "deleted" non voulue
+	>> git update-index --assume-unchanged <file>
+
+
+---------------------------------------------------------------
+------------------------------------ COMMANDS LINKED TO SYMFONY
+---------------------------------------------------------------
+---------------
+---- DEBUG ----
+---------------
+#voir toutes les routes
+	>> php app/console router:debug
+#effacer le cache
+	>> php app/console cache:clear
+#voir la liste des services
+	>> php app/console container:debug
+
+
+--------------------------------
+---- BUNDLE / ENTITY / CRUD ----
+--------------------------------
+---- BUNDLE
+-----------------
+#genere un nouveau bundle
+	>> php app/console generate:bundle
+		Bundle Namespace : MyApp/MyBundle
+		Bundle Name : MyAppMyBundle
+		Target Directory : src
+		Configuration format : yml
+		Create directory structure : yes
+		Do you confirm generation : yes
+		Confirm automatic update of your Kernel : yes
+		Confirm automatic update of the Rooting : yes
+
+---- ENTITY
+-----------------
+#genere une nouvelle entite
+	>> php app/console generate:doctrine:entity
+#genere toutes les entites
+	>> php app/console doctrine:generate:entities MyApp\MyBundle
+
+---- CRUD
+-----------------
+#genere le crud d'une entite
+	php app/console generate:doctrine:crud
+
+
+-------------------------------------------------
+---- VENDORS / DOCTRINE / FIXTURES / ASSETIC ----
+-------------------------------------------------
+---- VENDORS
+-----------------
+#install composer
+	>> curl -s http://getcomposer.org/installer | php
+#met à jour le composer
+	>> php composer.phar self-update
+#install ou met à jour les vendors
+	>> php composer.phar install
+	>> php composer.phar update
+
+---- DOCTRINE
+------------------------
+#detruit la base de donnee
+	>> php app/console doctrine:database:drop --force
+#cree la base de donnee
+	>> php app/console doctrine:database:create
+#cree ou met à jour les tables
+	>> php app/console doctrine:schema:create
+	>> php app/console doctrine:schema:update --force
+
+---- FIXTURES
+-----------------
+#cree les fixtures
+	>> php app/console doctrine:fixtures:load
+
+---- ASSETIC
+-----------------
+#exporte les ressources assetic
+	>> php app/console assetic:dump --env=prod
